@@ -12,6 +12,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using DnDBackend.Models;
+using Microsoft.Extensions.Options;
+using DnDBackend.Services;
 
 namespace DnDBackend
 {
@@ -24,12 +26,18 @@ namespace DnDBackend
 
         public IConfiguration Configuration { get; }
 
-        MongoClient dbClient = new MongoClient("mongodb+srv://hope:12345@cluster0.jjccl.mongodb.net/dnd-characters");
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            dbClient.GetDatabase("dnd-character");
+            // requires using Microsoft.Extensions.Options
+            services.Configure<CharactersDatabaseSettings>(
+                Configuration.GetSection(nameof(CharactersDatabaseSettings)));
+
+            services.AddSingleton<ICharactersDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<CharactersDatabaseSettings>>().Value);
+
+            services.AddSingleton<CharactersService>();
+
             services.AddControllers();
         }
 

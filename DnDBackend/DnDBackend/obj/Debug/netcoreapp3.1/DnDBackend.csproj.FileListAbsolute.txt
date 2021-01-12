@@ -18,3 +18,13 @@ F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.Ra
 F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.dll
 F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.pdb
 F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.genruntimeconfig.cache
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\DnsClient.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\SharpCompress.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.csproj.CopyComplete
