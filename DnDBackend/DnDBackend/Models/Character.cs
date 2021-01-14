@@ -14,10 +14,10 @@ namespace DnDBackend.Models
         public string Id { get; set; }
         [BsonElement("Name")]
         public string CharacterName { get; set; }
-        public string Race { get; set;  }
-        public string FightClass { get; set; }
-        public object Abilities { get; set; }
-        public object Description { get; set; }
-        public object Equipment { get; set; }
+        public Race Race { get; set;  }
+        public FightClass FightClass { get; set; }
+        public AbilitiesEntity.Abilities Abilities { get; set; }
+        public DescriptionEntitys.Description Description { get; set; }
+        public Equipment Equipment { get; set; }
     }
 }
