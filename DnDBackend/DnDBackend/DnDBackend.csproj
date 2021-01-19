@@ -7,19 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\AbilitiesEntity\**" />
+    <Compile Remove="Models\DescriptionEntity\**" />
     <Compile Remove="Новая папка\**" />
+    <Content Remove="Models\AbilitiesEntity\**" />
+    <Content Remove="Models\DescriptionEntity\**" />
     <Content Remove="Новая папка\**" />
+    <EmbeddedResource Remove="Models\AbilitiesEntity\**" />
+    <EmbeddedResource Remove="Models\DescriptionEntity\**" />
     <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="Models\AbilitiesEntity\**" />
+    <None Remove="Models\DescriptionEntity\**" />
     <None Remove="Новая папка\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\Abilities.cs" />
     <Compile Remove="Models\CharacterContext.cs" />
+    <Compile Remove="Models\Description.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
   </ItemGroup>
 
 

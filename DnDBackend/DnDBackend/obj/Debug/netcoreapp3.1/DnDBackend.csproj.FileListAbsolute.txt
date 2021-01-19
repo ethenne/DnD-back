@@ -28,3 +28,12 @@ F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\
 F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
 F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
 F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.csproj.CopyComplete
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\projects\DnD-back\DnDBackend\DnDBackend\obj\Debug\netcoreapp3.1\DnDBackend.MvcApplicationPartsAssemblyInfo.cs

@@ -14,6 +14,7 @@ using MongoDB.Driver;
 using DnDBackend.Models;
 using Microsoft.Extensions.Options;
 using DnDBackend.Services;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace DnDBackend
 {
@@ -39,11 +40,15 @@ namespace DnDBackend
             services.AddSingleton<CharactersService>();
 
             services.AddControllers();
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -53,6 +58,10 @@ namespace DnDBackend
 
             app.UseRouting();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

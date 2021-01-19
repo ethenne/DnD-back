@@ -1,0 +1,14 @@
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\UnitTestDnDBackend.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\UnitTestDnDBackend.pdb
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\obj\Debug\UnitTestDnDBackend.csprojAssemblyReference.cache
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\obj\Debug\UnitTestDnDBackend.csproj.CoreCompileInputs.cache
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\obj\Debug\UnitTestDnDBackend.csproj.CopyComplete
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\obj\Debug\UnitTestDnDBackend.dll
+F:\projects\DnD-back\DnDBackend\UnitTestDnDBackend\obj\Debug\UnitTestDnDBackend.pdb
