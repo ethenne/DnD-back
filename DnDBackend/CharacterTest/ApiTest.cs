@@ -1,4 +1,6 @@
+using DnDBackend.Controllers;
 using DnDBackend.Models;
+using DnDBackend.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -8,15 +10,29 @@ namespace CharacterTest
     public class ApiTest
     {
         [TestMethod]
-        public void PostCharacterTest()
+        public async void PostCharacterTest()
         {
+            var testData = GetCharacter();
+
+            await new RequestGenerator().PostCharacter(testData);
+
+        }
+        [TestMethod]
+        public void GetCharacterTest()
+        {
+            var testData = GetCharacter();
+
+            var res = new RequestGenerator().PostCharacter(testData);
+
+            var character = new RequestGenerator().GetCharacter(testData.PersonId);
+
         }
         private static Character GetCharacter()
         {
             return new Character()
             {
-                Id = "1",
-                CharacterName = "Urheinve",
+                PersonId = Guid.NewGuid().ToString(),
+                CharacterName = "Abaddon",
                 Level = 1,
                 Race = GetRace(),
                 FightClass = GetFightClass(),
@@ -46,11 +62,11 @@ namespace CharacterTest
                 Faith = "",
                 Lifestyle = "",
                 Description = "",
-                ProficiencyLanguageChoices = "Magician, Bard, Elvish",
+                ProficiencyLanguageChoices = "Magician, Bard, Abyss",
                 BackgroundFeature = "",
                 BackgroundCharacteristics = "",
-                AttunedMagicItems = "Elvish grimuar of Dragons",
-                StartingEquipment = "Elvish grimuar of Dragons, Elvish magician robe",
+                AttunedMagicItems = "Demons grimuar of Dragons",
+                StartingEquipment = "Demons grimuar of Dragons, Elvish magician robe",
                 ActiveItems = "",
                 OtherPosessions = "",
                 AddItems = "",

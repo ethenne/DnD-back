@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DnDBackend.Services;
 using DnDBackend.Models;
+using Swashbuckle.Swagger.Annotations;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,10 +23,20 @@ namespace DnDBackend.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Character>> Get() =>
-                    _characterService.Get();
+        public ActionResult<List<Character>> Get()
+        {
+            var character = _characterService.Get();
 
-        [HttpGet("{id:length(24)}", Name = "GetCharacter")]
+            if (character == null)
+            {
+                return NotFound();
+            }
+
+            return character;
+
+        }
+
+        [HttpGet("GetCharacter {id:length(24)}")]
         public ActionResult<Character> Get(string id)
         {
             var character = _characterService.Get(id);
@@ -38,15 +49,15 @@ namespace DnDBackend.Controllers
             return character;
         }
 
-        [HttpPost]
+        [HttpPost("CreateCharacter")]
         public ActionResult<Character> Create(Character character)
         {
             _characterService.Create(character);
 
-            return CreatedAtRoute("GetCharacter", new { id = character.Id.ToString() }, character);
+            return CreatedAtRoute("GetCharacter", new { id = character.PersonId.ToString() }, character);
         }
 
-        [HttpPut("{id:length(24)}")]
+        [HttpPut("UpdateCharacter {id:length(24)}")]
         public IActionResult Update(string id, Character characterIn)
         {
             var character = _characterService.Get(id);
@@ -61,7 +72,7 @@ namespace DnDBackend.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id:length(24)}")]
+        [HttpDelete("DeleteCharacter {id:length(24)}")]
         public IActionResult Delete(string id)
         {
             var character = _characterService.Get(id);
@@ -71,7 +82,7 @@ namespace DnDBackend.Controllers
                 return NotFound();
             }
 
-            _characterService.Remove(character.Id);
+            _characterService.Remove(character.PersonId);
 
             return NoContent();
         }

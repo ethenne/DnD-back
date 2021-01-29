@@ -15,6 +15,8 @@ using DnDBackend.Models;
 using Microsoft.Extensions.Options;
 using DnDBackend.Services;
 using Swashbuckle.AspNetCore.Swagger;
+using Newtonsoft;
+using Newtonsoft.Json.Converters;
 
 namespace DnDBackend
 {

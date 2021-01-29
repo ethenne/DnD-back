@@ -10,8 +10,8 @@ namespace DnDBackend.Models
     public class Character
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        [BsonIgnoreIfDefault]
+        public string PersonId { get; set; }
         [BsonElement("Name")]
         public string CharacterName { get; set; }
         public int Level { get; set; }
